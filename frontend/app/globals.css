@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Red F1 Theme - Global Styles */
+
+:root {
+  --f1-red: #E10600;
+  --f1-red-dark: #8B0000;
+  --f1-red-bright: #FF1E00;
+  --background: #0A0A0F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #1A0505 0%, #0A0A0F 100%);
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar - Red Theme */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #1A1A24;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+  border-left: 2px solid #E10600;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #E10600 0%, #8B0000 100%);
+  border-radius: 0;
+  border: 2px solid #0A0A0F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1E00;
+  box-shadow: 0 0 10px rgba(225, 6, 0, 0.8);
+}
+
+/* Selection */
+::selection {
+  background: #E10600;
+  color: white;
+}
+
+/* Smooth Transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+/* Glass Morphism Effect */
+.glass-red {
+  background: rgba(225, 6, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(225, 6, 0, 0.2);
+}
+
+/* Red Gradient Text */
+.gradient-text-red {
+  background: linear-gradient(135deg, #FF1E00 0%, #E10600 50%, #8B0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated Red Border */
+@keyframes redBorderGlow {
+
+  0%,
+  100% {
+    border-color: #E10600;
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.3);
+  }
+
+  50% {
+    border-color: #FF1E00;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.6);
+  }
+}
+
+.animated-red-border {
+  animation: redBorderGlow 2s ease-in-out infinite;
+}
+
+/* Racing Grid Pattern Background */
+.racing-grid {
+  background-image:
+    linear-gradient(rgba(225, 6, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 6, 0, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Loading Spinner - Red */
+@keyframes redSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-red {
+  border: 3px solid rgba(225, 6, 0, 0.2);
+  border-top-color: #E10600;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: redSpin 0.8s linear infinite;
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Red Glow Button */
+.btn-red-glow {
+  background: linear-gradient(135deg, #E10600 0%, #8B0000 100%);
+  box-shadow: 0 0 20px rgba(225, 6, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-red-glow:hover {
+  box-shadow: 0 0 30px rgba(225, 6, 0, 0.8), 0 0 60px rgba(225, 6, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(225, 6, 0, 0.3);
+}
+
+/* Animated Background Gradient */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-bg {
+  background: linear-gradient(270deg, #E10600, #8B0000, #FF1E00);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Stats Number Animation */
+@keyframes numberPop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.stats-number {
+  animation: numberPop 0.5s ease-out;
+}
+
+/* Racing Stripes */
+.racing-stripes {
+  background: repeating-linear-gradient(45deg,
+      transparent,
+      transparent 10px,
+      rgba(225, 6, 0, 0.1) 10px,
+      rgba(225, 6, 0, 0.1) 20px);
+}
+
+/* Neon Text */
+.neon-red-text {
+  text-shadow:
+    0 0 10px rgba(225, 6, 0, 0.8),
+    0 0 20px rgba(225, 6, 0, 0.6),
+    0 0 30px rgba(225, 6, 0, 0.4);
+}

@@ -1,0 +1,30 @@
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/firebase-credentials.json
+backend/f1-telemetry-analyzer-firebase-adminsdk-*.json
+
+# ML
+ml/models/
+ml/__pycache__/
+
+# Contracts
+contracts/node_modules/
+contracts/cache/
+contracts/artifacts/
+contracts/.env
+
+# General
+.DS_Store
+*.log
+.vscode/
+.idea/
