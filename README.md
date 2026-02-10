@@ -330,16 +330,16 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 📧 Contact
 
 **Project Maintainer**: Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@zhao-leihan)
 - Email: your.email@example.com
 
-**Project Link**: [https://github.com/yourusername/F1-Telemetry-Analyzer](https://github.com/yourusername/F1-Telemetry-Analyzer)
+**Project Link**: [https://github.com/zhao-leihan/F1-Telemetry-Analyzer](https://github.com/zhao-leihan/F1-Telemetry-Analyzer)
 
 ---
 
 <div align="center">
 
-### Built with ❤️ for Formula 1 enthusiasts and data scientists
+### Built with Zhao han for Formula 1 enthusiasts and data scientists
 
 **⭐ Star this repo if you find it useful!**
 
